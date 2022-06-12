@@ -1,11 +1,12 @@
 {
   "name": "goit-js-module_11.1_crud_repeta-",
-  "version": "2.0.0",
+  "version": "1.0.0",
   "description": "",
-  "homepage": "https://andreyherzhov.github.io/goit-js-module_11.1_crud_repeta-",
+  "main": "index.js",
   "scripts": {
-    "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-js-module_11.1_crud_repeta-/"
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "server": "json-server --watch db.json -p 4040 -d 3000"
   },
   "repository": {
     "type": "git",
@@ -17,14 +18,12 @@
   "bugs": {
     "url": "https://andreyherzhov.github.io/goit-js-module_11.1_crud_repeta-/issues"
   },
-  "dependencies": {
-    "modern-normalize": "^1.1.0"
-  },
+  "homepage": "https://andreyherzhov.github.io/goit-js-module_11.1_crud_repeta-/js-22#readme",
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.6.0",
-    "parcel": "^2.6.0",
-    "parcel-reporter-clean-dist": "^1.0.4",
-    "posthtml-include": "^1.7.4"
+    "json-server": "^0.16.2",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-handlebars-precompile": "^1.0.2",
+    "parcel-plugin-nuke-dist": "^1.0.1"
   },
-  "browserslist": "> 0.5%, last 2 versions, not dead"
+  "dependencies": {}
 }
